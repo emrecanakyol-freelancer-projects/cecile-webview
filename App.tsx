@@ -4,6 +4,7 @@ import {
   RefreshControl,
   ScrollView,
   BackHandler,
+  Platform,
 } from 'react-native';
 import {WebView} from 'react-native-webview';
 import SplashScreen from 'react-native-splash-screen';
@@ -13,6 +14,7 @@ const App = () => {
   const [refresherEnabled, setEnableRefresher] = useState(true);
   const webViewRef: any = useRef();
   const [canGoBack, setCanGoBack] = useState(false);
+  const oneSignalID = Platform.OS === "android" ? 'f3841743-9f27-4321-9e60-dac87bd6b462' : Platform.OS === "ios" ? "c20c0182-ce8f-48df-b2ff-a41a2c17f854" : ""
 
   const handleBack = useCallback(() => {
     if (canGoBack && webViewRef.current) {
@@ -33,7 +35,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    OneSignal.initialize('f3841743-9f27-4321-9e60-dac87bd6b462');
+    OneSignal.initialize(oneSignalID);
     OneSignal.Notifications.requestPermission(true);
     OneSignal.Notifications.addEventListener('click', event => {
       console.log('OneSignal: notification clicked:', event);
