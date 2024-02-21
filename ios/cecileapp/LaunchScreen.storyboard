@@ -17,17 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="launch_screen" translatesAutoresizingMaskIntoConstraints="NO" id="R2M-ng-AVB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="launch_screen" translatesAutoresizingMaskIntoConstraints="NO" id="ITX-Mg-jtc">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="R2M-ng-AVB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="5TO-Mo-LEB"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="R2M-ng-AVB" secondAttribute="bottom" id="nCz-4q-Mun"/>
-                            <constraint firstItem="R2M-ng-AVB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="qJK-Fc-kXn"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="R2M-ng-AVB" secondAttribute="trailing" id="uUp-5z-ot0"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="ITX-Mg-jtc" secondAttribute="trailing" id="7jQ-0N-TAB"/>
+                            <constraint firstItem="ITX-Mg-jtc" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="qBn-Lp-Po6"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="ITX-Mg-jtc" secondAttribute="bottom" id="qkm-d0-aTL"/>
+                            <constraint firstItem="ITX-Mg-jtc" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="rF0-VU-Eev"/>
                         </constraints>
                     </view>
                 </viewController>

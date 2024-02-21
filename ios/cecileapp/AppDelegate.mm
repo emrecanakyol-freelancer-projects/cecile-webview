@@ -14,8 +14,8 @@
 
   [super application:application didFinishLaunchingWithOptions:launchOptions];
   [RNSplashScreen show];
-
-  return YES; 
+    
+  return YES;
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
